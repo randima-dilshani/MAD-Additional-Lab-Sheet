@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music1"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="112dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="184dp"
+        android:onClick="play"
+        android:text="@string/play"
+        android:textColor="#0E0E0E"
+        app:backgroundTint="#FDF3F3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="115dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="60dp"
+        android:onClick="pause"
+        android:text="@string/pause"
+        android:textColor="#0C0C0C"
+        app:backgroundTint="#AE80B1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="115dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="60dp"
+        android:onClick="stop"
+        android:text="@string/stop"
+        android:textColor="#050505"
+        app:backgroundTint="#ED8686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
